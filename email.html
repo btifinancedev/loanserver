@@ -1,0 +1,9 @@
+curl -X POST 'https://api.resend.com/emails' \
+  -H 'Authorization: Bearer re_e7PaC1h3_GmmVbnDASc3NSKJCuGVEmaBq' \
+  -H 'Content-Type: application/json' \
+  -d $'{
+    "from": "applications@resend.dev",
+    "to": "btifinanceofficial@gmail.com",
+    "subject": "Hello World",
+    "html": "<p>Congrats on sending your <strong>first email</strong>!</p>"
+  }'
